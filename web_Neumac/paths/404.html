@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Error 404 - Página no encontrada</title>
+  </head>
+  <body>
+    <h1>Error 404 - Página no encontrada</h1>
+    <p>Lo sentimos, la página que estás buscando no existe.</p>
+
+<!-- Redireccionamiento 404 -->
+<script>
+    window.addEventListener('error', function(e) {
+      if (e && e.status === 404) {
+        window.location.href = '/404.html';
+      }
+    }, true);
+  </script>
+  
+
+  </body>
+</html>
+
